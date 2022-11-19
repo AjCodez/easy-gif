@@ -42,6 +42,7 @@ function add_search(data) {
     if (data.length > 0) {
       var search_gifs = document.getElementById("search_gifs");
       var gifs = document.getElementById("gifs_searched");
+      gifs.innerHTML='';
       data.forEach((gif) => {
         gifs.innerHTML += `<div class='gif'>
                       <img src=${gif.images.original.url}/>  
