@@ -1,0 +1,502 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+}
+body {
+  display: flex;
+  width: auto;
+  height: auto;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+  color: white;
+}
+.container {
+  width: 80%;
+  height: auto;
+}
+/*Nav-Bar*/
+.wrapper {
+  display: none;
+}
+.nav {
+  margin-top: 20px;
+  width: 100%;
+  height: auto;
+}
+.container .nav #navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+}
+.nav #navbar #login {
+  float: right;
+}
+.container .nav ul#navbar li {
+  float: left;
+}
+.container .nav ul#navbar li a {
+  display: block;
+  font-weight: bold;
+  padding: 8px 16px;
+  color: white;
+  font-size: 25px;
+  font-weight: 500;
+  text-decoration: none;
+  border-bottom: 2px solid crimson;
+  transition: all 0.5s ease;
+}
+.container .nav ul#navbar li a:hover {
+  color: crimson;
+}
+.container .nav ul#navbar #logo {
+  border-bottom: none;
+  font-size: 30px;
+  color: crimson;
+}
+.container .nav ul#navbar #logina {
+  border-bottom: none;
+}
+.container .nav ul#navbar #logina i {
+  font-size: 25px;
+  color: crimson;
+  font-weight: 500;
+  margin-right: 10px;
+}
+
+/* Search bar */
+#searchbar {
+  width: 100%;
+  margin-top: 20px;
+}
+#searchbar input {
+  padding: 6px;
+  width: calc(99% - 59px);
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+  height: 50px;
+  font-size: 25px;
+  padding: 5px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+#searchbar button {
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+  background: #ddd;
+  border: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+#searchbar button:hover {
+  background: #ccc;
+}
+/* Banner */
+#banner {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/*Trending*/
+#trend {
+  width: 100%;
+}
+#trendheading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#trend #trendheading i {
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.fa-chart-line,
+.fa-heart,
+.fa-video,
+.fa-volleyball-ball,
+.fa-handshake,
+.fa-sticky-note,
+.fa-globe {
+  color: crimson;
+}
+#trend #trendheading a {
+  color: crimson;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+#trend #trendheading a:hover {
+  color: white;
+}
+#trend h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+#trend #trendgifs {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+#trend #trendgifs #box1 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+#trend #trendgifs #box2 {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  overflow: hidden;
+}
+#trend #trendgifs img {
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  margin-right: 5px;
+}
+
+/* Search */
+#search_gifs {
+  visibility: hidden;
+}
+#search_gifs {
+  width: 100%;
+  margin-top: 10px;
+}
+#trendheading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#search_gifs #trendheading i {
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.fa-tv-music {
+  color: crimson;
+}
+#search_gifs #trendheading a {
+  color: crimson;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+#search_gifs #trendheading a:hover {
+  color: white;
+}
+#search_gifs h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+/* Grid */
+#search_gifs .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+/* All */
+#allgif {
+  width: 100%;
+  margin-top: 10px;
+}
+#trendheading {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#allgif #trendheading i {
+  font-size: 25px;
+  font-weight: 500;
+  margin-right: 5px;
+}
+.fa-tv-music {
+  color: crimson;
+}
+#allgif #trendheading a {
+  color: crimson;
+  transition: all 0.5s ease;
+  text-decoration: none;
+}
+#allgif #trendheading a:hover {
+  color: white;
+}
+#allgif h2 {
+  font-size: 25px;
+  font-weight: 500;
+}
+/* Grid */
+#allgif .row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+#allgif .column {
+  -ms-flex: 24%; /* IE10 */
+  flex: 24%;
+  max-width: 24%;
+  padding: 0 4px;
+}
+
+#allgif .column img {
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+}
+
+.gifs {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.gif {
+  height: 100%;
+  width: 100%;
+}
+.gif img {
+  width: 95%;
+  height: 90%;
+  border: 10px solid black;
+}
+/* Footer */
+footer {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-radius: 25px;
+  box-shadow: 5px 5px 5px black;
+  background: black;
+  padding-top: 10px;
+}
+.footer-content {
+  display: flex;
+  justify-content: center;
+}
+.footer-content p {
+  border-radius: 25px;
+  text-align: center;
+  color: crimson;
+  font-size: 20px;
+  margin: 10px;
+  position: relative;
+}
+.footer-content p i {
+  font-size: 20px;
+}
+.footer-content p::before {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  left: 0;
+  background: white;
+  top: -10px;
+  transition: all 0.3s;
+}
+
+.footer-content p::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  display: block;
+  position: absolute;
+  right: 0;
+  background: white;
+  bottom: -10px;
+  transition: all 0.3s;
+}
+.footer-content p:hover::after,
+.footer-content p:hover::before {
+  width: 100%;
+}
+hr {
+  opacity: 0.2;
+}
+/*Grid*/
+@media (max-width: 1110px) {
+  .gifs {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (max-width: 880px) {
+  .gifs {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (max-width: 620px) {
+  .gifs {
+    grid-template-columns: 1fr;
+  }
+}
+/*Search bar*/
+@media (max-width: 900px) {
+  #searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #searchbar input {
+    width: 500px;
+  }
+  #searchbar button {
+  }
+}
+@media (max-width: 726px) {
+  #searchbar input {
+    width: 350px;
+  }
+}
+@media (max-width: 600px) {
+  #searchbar button {
+    display: none;
+  }
+  #searchbar input {
+    width: 100%;
+  }
+}
+/*heading*/
+@media (max-width: 450px) {
+  #trendheading h2 {
+    font-size: 20px;
+  }
+  #trendheading h2 i {
+    font-size: 20px;
+  }
+}
+@media (max-width: 370px) {
+  #trendheading h2 {
+    font-size: 15px;
+  }
+  #trendheading h2 i {
+    font-size: 15px;
+  }
+}
+/*gifs trending*/
+@media (max-width: 950px) {
+  #trendgifs {
+    flex-direction: column;
+  }
+  #trendgifs #box1 {
+    margin-bottom: 5px;
+  }
+}
+@media (max-width: 650px) {
+  #trendgifs #box2 {
+    display: none;
+  }
+  #trendgifs #box2 img {
+    display: none;
+  }
+  #trendgifs #box1 {
+    flex-direction: column;
+  }
+  #trendgifs #box1 img {
+    margin-bottom: 5px;
+  }
+}
+/*Dropdown nav*/
+@media (max-width: 1185px) {
+  .nav {
+    display: none;
+  }
+  .wrapper {
+    display: block;
+    padding-top: 20px;
+    width: 100%;
+    margin: 0 auto;
+    color: white;
+  }
+  .logo2 {
+    float: left;
+  }
+  .logo2 h2 a {
+    color: crimson;
+    text-decoration: none;
+    font-size: 30px;
+  }
+  .menubutn {
+    color: crimson;
+    padding: 15px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  .rightmenu {
+    position: relative;
+    display: inline-block;
+    float: right;
+  }
+  .dropdown {
+    display: none;
+    position: absolute;
+    right: 10px;
+    background-color: crimson;
+    color: white;
+    min-width: 158px;
+    z-index: 1;
+  }
+  .dropdown a:hover {
+    border-bottom: 2px solid white;
+  }
+  .rightmenu:hover .dropdown {
+    display: block;
+  }
+  .menubutn {
+    background-color: black;
+    color: white;
+    border: none;
+    outline: none;
+  }
+  .menubutn i {
+    color: crimson;
+    font-size: 25px;
+  }
+  .menubutn a {
+    font-size: 25px;
+    color: white;
+    text-decoration: none;
+  }
+  .menubutn a i {
+    margin-right: 10px;
+  }
+  .dropdown div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    flex-direction: column;
+    margin: 5px;
+  }
+  .dropdown div a {
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    padding: 20px;
+  }
+  .fa-ellipsis-v {
+    margin-right: 0;
+    padding-right: 0;
+  }
+}
