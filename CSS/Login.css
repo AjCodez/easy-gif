@@ -19,7 +19,16 @@ h1 a {
 }
 
 /* ---------------------------------------- */
-
+#Easy-GIF{
+  border-bottom: none ;
+  animation: mymove 4s infinite;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+@keyframes mymove {
+  from {background-image:linear-gradient(to right ,  #bfe9ff , #de2c61);}
+  to {background-image:linear-gradient(to right , #de2c61 , #bfe9ff) ;}
+}
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
   margin: 0;
