@@ -11,13 +11,17 @@
   font-size: 25px;
   border-bottom: 2px solid crimson;
   transition: all 0.5s ease;
-  background-color: black;
+  /* background-color: black; */
+  background-image: url(https://gfycat.com/elaboratetenderbushsqueaker);
 }
 h1 a {
   color: crimson;
   text-decoration: none;
 }
-
+body{
+  /* background-image: url(https://gfycat.com/elaboratetenderbushsqueaker); */
+  background-image: linear-gradient(to right , #FEAC5E , #C779D0, #4BC0C8);
+}
 /* ---------------------------------------- */
 #Easy-GIF{
   border-bottom: none ;
@@ -26,8 +30,8 @@ h1 a {
   -webkit-background-clip: text;
 }
 @keyframes mymove {
-  from {background-image:linear-gradient(to right ,  #bfe9ff , #de2c61);}
-  to {background-image:linear-gradient(to right , #de2c61 , #bfe9ff) ;}
+  from {background-image:linear-gradient(to right ,  #edf5f9 , #de2c61);}
+  to {background-image:linear-gradient(to right , #de2c61 , #edf5f9 ) ;}
 }
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
 *{
@@ -41,7 +45,7 @@ html,body{
   height: 100%;
   width: 100%;
   place-items: center;
-  background:black;
+  /* background:black;   */
 }
 ::selection{
   background: #fa4299;
