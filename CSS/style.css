@@ -106,8 +106,12 @@ body {
   border: none;
   text-align: center;
   cursor: pointer;
+  margin-bottom: 15px;
 }
+.image{
+  width : 98.5%;
 
+}
 #searchbar button:hover {
   animation: mymove 4s infinite;
 }
@@ -129,6 +133,7 @@ body {
   width: 100%;
 }
 #trendheading {
+  margin-top: -30px;
   width: 100%;
   display: flex;
   align-items: center;
