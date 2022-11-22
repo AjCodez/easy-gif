@@ -52,9 +52,10 @@ body {
   color: crimson;
 }
 .container .nav ul#navbar #logo {
+  animation : mymove 5s infinite;
   border-bottom: none;
   font-size: 30px;
-  color: crimson;
+  color: white;
 }
 .container .nav ul#navbar #logina {
   border-bottom: none;
@@ -92,7 +93,7 @@ body {
   padding: 6px 10px;
   margin-top: 8px;
   margin-right: 16px;
-  background: #ddd;
+  animation: mymove 5s infinite;
   border: none;
   text-align: center;
   cursor: pointer;

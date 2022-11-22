@@ -99,7 +99,11 @@ body {
 }
 
 #searchbar button:hover {
-  background: #ccc;
+  animation: mymove 4s infinite;
+}
+@keyframes mymove {
+  from {background-image:linear-gradient(to right ,  #bfe9ff , #ff6e7f);}
+  to {background-image:linear-gradient(to right , #ff6e7f , #bfe9ff) ;}
 }
 /* Grid */
 .row {
