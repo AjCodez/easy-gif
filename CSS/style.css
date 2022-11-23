@@ -45,20 +45,16 @@ body {
   font-size: 25px;
   font-weight: 500;
   text-decoration: none;
-  /* border-bottom: 2px solid crimson;
-   */
   border-bottom : 4px solid transparent;
   border-image: linear-gradient( 0.25turn , rgba(255 ,249 , 34) , rgba(255,0,128) , rgba(56 , 2 , 155 , 0 ));
+  
   border-image-slice: 1;
   transition: all 0.5s ease;
 }
 .container .nav ul#navbar li a:hover {
   animation: mymove 4s infinite;
-  /* background: linear-gradient(
-            to right, #f32170, #ff6b08,
-             #cf23cf, #eedd44); */
-        -webkit-text-fill-color: transparent;
-        -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
 }
 .container .nav ul#navbar #logo {
   animation : mymove 5s infinite;
@@ -133,7 +129,7 @@ body {
   width: 100%;
 }
 #trendheading {
-  margin-top: -30px;
+  margin-top: -10px;
   width: 100%;
   display: flex;
   align-items: center;
