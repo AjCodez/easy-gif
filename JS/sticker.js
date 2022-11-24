@@ -2,6 +2,20 @@ var api_key = "SqDsnjsRsmHqGcw4Nm00tF55j7M3jtQj";
 var url_3 = `https://api.giphy.com/v1/stickers/trending?api_key=${api_key}`;
 var search = document.getElementById("searchbarr");
 var form = document.getElementById("form");
+var logi = document.getElementById("login");
+
+if (window.localStorage.getItem('name')){
+  logi.innerHTML=`<a href="#" onClick="logout1()" id="logina"><i class="fas fa-user-alt"></i>${window.localStorage.getItem('name')}</a>`
+}
+else{
+  logi.innerHTML=`<a href="../Html/Login.html" id="logina"><i class="fas fa-user-alt"></i>Login</a>`;
+}
+
+function logout1() {
+  window.localStorage.removeItem('name');
+  window.localStorage.removeItem('token');
+  window.location.reload();
+}
 
 form.addEventListener("submit", (e) => {
   e.preventDefault();
