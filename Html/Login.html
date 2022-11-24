@@ -39,17 +39,17 @@
                <div class="form-inner">
                   <form action="#" class="login">
                      <div class="field">
-                        <input type="text" placeholder="Email Address" required>
+                        <input id="loginEmail" type="email" placeholder="Email Address" required>
                      </div>
                      <div class="field">
-                        <input type="password" placeholder="Password" required>
+                        <input id="loginPassword" type="password" placeholder="Password" required>
                      </div>
-                     <div class="pass-link">
+                     <!-- <div class="pass-link">
                         <a href="#">Forgot password?</a>
-                     </div>
+                     </div> -->
                      <div class="field btn">
                         <div class="btn-layer"></div>
-                        <input type="submit" value="Login">
+                        <input class="login1" type="submit" value="Login">
                      </div>
                      <div class="signup-link">
                         Not a member? <a href="">Signup now</a>
@@ -57,17 +57,20 @@
                   </form>
                   <form action="#" class="signup">
                      <div class="field">
-                        <input type="text" placeholder="Email Address" required>
+                        <input id="signup-name" type="name" placeholder="Full Name" required>
                      </div>
                      <div class="field">
-                        <input type="password" placeholder="Password" required>
+                        <input id="signup-email" type="email" placeholder="Email Address" required>
                      </div>
                      <div class="field">
-                        <input type="password" placeholder="Confirm password" required>
+                        <input id="signup-password" type="password" placeholder="Password" required>
+                     </div>
+                     <div class="field">
+                        <input id="signup-cpassword" type="password" placeholder="Confirm password" required>
                      </div>
                      <div class="field btn">
                         <div class="btn-layer"></div>
-                        <input type="submit" value="Signup">
+                        <input class="signup1" type="submit" value="Signup">
                      </div>
                   </form>
                </div>
