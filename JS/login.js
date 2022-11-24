@@ -35,6 +35,8 @@ signupForm.addEventListener('click', async (e) => {
     const js = await signupResponse.json();
     if (js.success){
       alert('Success');
+      window.localStorage.setItem('token',js.token);
+      window.localStorage.setItem('name',js.name);
       window.location.href="../index.html"
     }
     else{
@@ -61,6 +63,8 @@ logForm.addEventListener('click', async (e) => {
     const js = await signupResponse.json();
     if (js.success){
       alert('Success');
+      window.localStorage.setItem('token',js.token);
+      window.localStorage.setItem('name',js.name);
       window.location.href="../index.html"
     }
     else{
