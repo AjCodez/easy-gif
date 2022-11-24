@@ -34,9 +34,10 @@ router.post('/createuser', [
         id: user.id
       }
     }
+    const name = user.name;
     const authToken = jwt.sign(data, 'giffy');
     success = true;
-    res.json({success, authToken})
+    res.json({success, name, authToken})
   } catch (error) {
     console.error(error.message);
     success = false;
@@ -68,9 +69,10 @@ router.post('/loginuser', [
         id: user.id
       }
     }
+    const name = user.name;
     const authToken = jwt.sign(data, 'giffy');
     success = true;
-    res.json({success, authToken})
+    res.json({success, name, authToken})
 
   } catch (error) {
     console.error(error.message);
